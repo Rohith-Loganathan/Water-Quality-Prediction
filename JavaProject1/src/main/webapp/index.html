@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Water Quality Prediction System</h1>
+        <div class="form-box">
+            <form action="predict" method="POST">
+                <label>Enter pH value:</label>
+                <input type="number" step="0.01" name="ph" required><br><br>
+
+                <label>Enter Turbidity (NTU):</label>
+                <input type="number" step="0.01" name="turbidity" required><br><br>
+
+                <label>Enter Total Dissolved Solids (TDS ppm):</label>
+                <input type="number" step="0.01" name="tds" required><br><br>
+
+                <label>Enter Temperature (°C):</label>
+                <input type="number" step="0.1" name="temperature" required><br><br>
+
+                <label>Enter Dissolved Oxygen (mg/L):</label>
+                <input type="number" step="0.1" name="dissolvedOxygen" required><br><br>
+
+                <button type="submit">Predict Quality</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
